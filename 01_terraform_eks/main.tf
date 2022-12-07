@@ -62,10 +62,10 @@ module "eks" {
   node_groups = {
     first = {
       desired_capacity = 1
-      max_capacity     = 10
+      max_capacity     = 1
       min_capacity     = 1
 
-      instance_type = "m5.large"
+      instance_type = "t2.micro"
     }
   }
 
